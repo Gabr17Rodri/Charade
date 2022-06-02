@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-title>
+      Charade
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="success">
+  <div class="container">
+    <div class="titulo">
+      <h1>A charada da vez é: </h1>
+    </div>
+
+    <div class="interrogacao">
+      <img src="../../assets/help-outline.svg">
+
+      <hr>
+
+      <img src="../../assets/help-outline.svg">
+    </div>
+
+    <div class="charada">
+      <ion-label *ngFor="let item of pergunta; let i = index">
+        {{item.pergunta}}
+      </ion-label>
+    </div>
+
+    <div class="resposta" *ngIf="!resultado">
+      <div *ngFor="let item of pergunta; let i = index">
+        Resp: {{item.resposta}}
+      </div>
+    </div>
+
+    <div class="botao">
+      <button type="button" class="btn btn-dark" (click)="Resposta()">
+        Resposta!
+      </button>
+
+      <br>
+
+      <button type="button" class="btn btn-danger"(click)="Charada()">
+        Nova Charada<ion-icon name="refresh"></ion-icon>
+      </button>
+    </div>
+  </div>
+</ion-content>

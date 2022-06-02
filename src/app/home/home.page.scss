@@ -1,0 +1,50 @@
+ion-title{
+  text-align: center;
+  color: black;
+}
+
+.container{
+  text-align: center;
+}
+
+.titulo{
+  margin-top: 15%;
+  color: black;
+}
+
+.interrogacao{
+  display: flex;
+  margin-bottom: -30px;
+}
+
+.interrogacao hr{
+  height: 1.5px;
+  margin-left: 1%;
+  width: 80%;
+  background-color: black;
+}
+
+.interrogacao img{
+  height: 250px;
+  margin-top: -150px;
+}
+
+.charada{
+  font-size: 25px;
+  color: black;
+}
+
+.resposta{
+  font-size: 25px;
+  color: black;
+  margin-top: 15px;
+}
+
+.botao{
+  margin-top: 30px;
+}
+
+.botao .btn{
+  margin-bottom: 20px;
+  padding: 10px 10px;
+}
